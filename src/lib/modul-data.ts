@@ -37,16 +37,12 @@ export const MODUL_PROMPT_ENGINEERING: ModulSection[] = [
     badge: "Orientasi & Capaian",
     iconName: "target",
     summary:
-      "Modul Pembelajaran Interaktif (MPI) ini dirancang untuk membekali peserta didik dengan pemahaman fundamental dan keterampilan praktis Prompt Engineering—mulai dari dasar perumusan instruksi AI, tata kelola input & konteks data, kendali format output, hingga penerapan persona profesional dan ajakan diskusi kolaboratif. Dalam konteks Tebak Gambar, kompetensi ini menjadi kunci utama untuk mendekonstruksi dan merekonstruksi prompt visual di meja permainan.",
+      "Modul Pembelajaran Interaktif (MPI) ini dirancang untuk membekali peserta didik dengan pemahaman fundamental dan keterampilan praktis Prompt Engineering terapan pada sintesis visual—mulai dari cara kerja model generatif gambar, teknik dekonstruksi formula 3 elemen inti (Input, Persona, Output) untuk merekayasa balik (reverse prompting) gambar target, hingga penyusunan instruksi presisi di meja permainan Tebak Gambar.",
     learningObjectives: [
-      "Memahami konsep dasar prompt dan cara kerja model kecerdasan buatan berbasis prediksi probabilitas kata/token (mencegah efek Garbage In, Garbage Out).",
-      "Menguasai teknik penyusunan instruksi terstruktur menggunakan 3 elemen inti: Input, Output, dan Persona.",
-      "Menerapkan kata kerja aksi operasional dan batasan ketat guna mencegah halusinasi data.",
-      "Mampu memisahkan instruksi perintah dengan dokumen rujukan serta menjadikan teks masukan (input) sebagai sumber kebenaran tunggal.",
-      "Mengendalikan format keluaran (output control) seperti tabel Markdown, jumlah butir persis, dan batasan panjang teks yang baku.",
-      "Menerapkan persona profesional dan menyelaraskan gaya bahasa (tone of voice) yang adaptif terhadap profil audiens sasaran.",
-      "Mentransformasi prompt satu arah menjadi dialog interaktif dua arah (collaborative & Socratic inquiry) sebagai mitra berpikir kritis.",
-      "Khusus Tebak Gambar: Mengaplikasikan formula Input, Output, dan Persona untuk merekayasa balik (reverse prompting) gambar keluaran AI menjadi teks instruksi presisi di meja permainan.",
+      "Memahami cara kerja model AI generatif gambar berbasis probabilitas token/ruang laten serta pengaruhnya terhadap variasi hasil visual (mencegah prinsip Garbage In, Garbage Out).",
+      "Mendekonstruksi gambar target ke dalam formula 3 elemen inti: Input (subjek, atribut, aksi, latar), Persona (gaya estetika/medium artistik), dan Output (komposisi, pencahayaan, suasana).",
+      "Menyusun rekonstruksi prompt visual (reverse prompting) yang presisi, spesifik, dan bebas ambiguitas guna meminimalkan distorsi dan halusinasi visual.",
+      "Mengevaluasi kesenjangan visual antara gambar hasil tebakan dengan gambar target asli berdasarkan kesesuaian kata kunci (token match) untuk perbaikan berkelanjutan.",
     ],
     competencyMap: [
       {
@@ -54,59 +50,59 @@ export const MODUL_PROMPT_ENGINEERING: ModulSection[] = [
         tag: "Pengenalan Prompt",
         title: "Bab 1: Pengenalan Prompt",
         objective:
-          "Memahami hakikat prompt, probabilitas token kata, prinsip GIGO, dan 3 elemen inti (Input, Output, Persona).",
+          "Memahami hakikat prompt visual, probabilitas ruang laten, prinsip GIGO, dan formula 3 elemen inti (Input, Output, Persona).",
       },
       {
         chapterNumber: 2,
         tag: "Prompt Engineering",
         title: "Bab 2: Konsep & Prinsip Prompt Engineering",
         objective:
-          "Menerapkan kata kerja aksi operasional dan aturan batasan negatif guna mengunci fakta dari halusinasi data.",
+          "Menerapkan kata kunci deskriptif yang terarah dan batasan visual spesifik guna meminimalkan distorsi gambar.",
       },
       {
         chapterNumber: 3,
         tag: "Input & Konteks",
         title: "Bab 3: Mengelola Input & Konteks Data",
         objective:
-          "Memisahkan bahan acuan secara tegas dan menjadikan dokumen input sebagai sumber fakta tunggal tanpa spekulasi.",
+          "Menjadikan gambar sasaran sebagai sumber observasi visual tunggal (subjek, aksi, latar) tanpa membuat asumsi fiktif.",
       },
       {
         chapterNumber: 4,
         tag: "Format Output",
         title: "Bab 4: Output Control: Format & Batasan",
         objective:
-          "Mengatur tata letak tabel Markdown, presisi kuantitas butir, dan batasan panjang respons AI secara terukur.",
+          "Mengendalikan medium visual, komposisi framing kamera, dan teknik pencahayaan secara terukur.",
       },
       {
         chapterNumber: 5,
         tag: "Persona & Audiens",
         title: "Bab 5: Penerapan Persona & Target Audiens",
         objective:
-          "Mengadopsi peran ahli yang relevan serta menyelaraskan kosakata dan analogi sesuai profil target audiens sasaran.",
+          "Menetapkan peran estetika seniman/fotografer dan menyelaraskan atmosfer emosional (mood) pada visual.",
       },
       {
         chapterNumber: 6,
         tag: "Ajakan Diskusi",
         title: "Bab 6: Ajakan Diskusi Kolaboratif",
         objective:
-          "Mengubah instruksi pasif menjadi dialog berpikir kritis dua arah dengan metode interaksi bertahap (*Socratic inquiry*).",
+          "Menerapkan komunikasi dan penalaran kritis antarrekan satu tim dalam membedah gambar sebelum mengirimkan tebakan prompt.",
       },
     ],
     keyPoints: [
       {
         title: "Profil & Capaian Pembelajaran Lulusan",
         description:
-          "Setelah menyelesaikan modul ini, peserta didik tidak lagi sekadar menjadi konsumen AI pasif yang mengetik secara acak, melainkan mampu berperan sebagai 'Prompt Engineer' yang terampil mengarahkan sistem AI menghasilkan analisis yang faktual, terstruktur, dan bernilai guna tinggi.",
+          "Setelah menyelesaikan modul ini, peserta didik mampu mendekonstruksi stimulus visual dan merekonstruksinya menjadi teks instruksi (prompt) terstruktur yang menghasilkan visual berakurasi tinggi di sistem AI gambar.",
       },
       {
         title: "Peta Pembelajaran Terpadu (6 Bab Bertingkat)",
         description:
-          "Pembelajaran disusun secara bertahap mulai dari fondasi konseptual (Bab 1-2), teknik manipulasi konteks input & format output (Bab 3-4), hingga strategi komunikasi persona dan kolaborasi dialog kritis (Bab 5-6).",
+          "Pembelajaran disusun secara bertahap mulai dari fondasi probabilitas visual (Bab 1-2), observasi input dan kontrol estetika output (Bab 3-4), hingga karakter artistik dan diskusi kolaborasi tim (Bab 5-6).",
       },
       {
         title: "Korelasi Langsung dengan Meja Permainan Tebak Gambar",
         description:
-          "Di meja permainan, tim Pembuat (Maker) menggunakan prinsip Input, Output, dan Persona untuk menciptakan stimulus gambar yang kaya detail. Sebaliknya, tim Penebak (Guesser) menggunakan metode dekonstruksi untuk mengidentifikasi ketiga elemen tersebut dari gambar sasaran.",
+          "Di meja permainan, tim Pembuat (Maker) menggunakan formula Input, Persona, dan Output untuk menyusun prompt stimulus gambar, sedangkan tim Penebak (Guesser) merekayasa balik (reverse prompt) gambar target untuk meraih akurasi kata kunci dan skor maksimal.",
       },
     ],
     tips: [
