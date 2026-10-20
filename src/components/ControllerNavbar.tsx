@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Copy, Check, ExternalLink, RotateCcw, Settings, Wifi, Trophy } from "lucide-react";
+import Link from "next/link";
+import { Copy, Check, ExternalLink, RotateCcw, Settings, Wifi, Trophy, BookOpen } from "lucide-react";
 
 interface ControllerNavbarProps {
   roomCode: string;
@@ -107,6 +108,17 @@ export const ControllerNavbar: React.FC<ControllerNavbarProps> = ({
             <Wifi className={`w-3.5 h-3.5 ${isConnected ? "text-[#52B788]" : "text-[#EAB308]"}`} />
             <span className="text-[11px]">{isConnected ? "Terhubung" : "Koneksi..."}</span>
           </div>
+
+          {/* Modul Pembelajaran */}
+          <Link
+            href="/modul"
+            title="Buka Modul Pembelajaran & Tujuan Pembelajaran"
+            className="px-3 py-2 rounded bg-[#B83214] hover:bg-[#96270E] text-white text-xs font-mono-tabular font-semibold transition-colors border border-[#5A5852] flex items-center gap-1.5 min-h-[44px] focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+          >
+            <BookOpen className="w-4 h-4 text-white" />
+            <span className="hidden sm:inline">Modul</span>
+            <span className="sm:hidden">Modul</span>
+          </Link>
 
           {/* Papan Skor Modal */}
           {onOpenLeaderboard && (

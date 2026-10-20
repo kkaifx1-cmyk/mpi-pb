@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { useRoomSync } from "@/lib/useRoomSync";
 import { DiscussionModal } from "@/components/DiscussionModal";
 import { CountdownTimer } from "@/components/CountdownTimer";
@@ -21,6 +22,7 @@ import {
   AlertCircle,
   Clock,
   Wand2,
+  BookOpen,
 } from "lucide-react";
 
 export default function PlayPage() {
@@ -372,6 +374,16 @@ export default function PlayPage() {
               Masuk ke Ruangan Permainan
             </button>
           </form>
+
+          <div className="mt-5 pt-4 border-t border-[#C8C3B8] text-center">
+            <Link
+              href="/modul"
+              className="inline-flex items-center gap-1.5 text-xs font-mono-tabular font-semibold text-[#B83214] hover:text-[#96270E] p-2 rounded hover:bg-[#EAE6DC] transition-colors"
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>Buka Modul Pembelajaran & Tujuan Belajar</span>
+            </Link>
+          </div>
         </div>
       </main>
     );
@@ -411,6 +423,16 @@ export default function PlayPage() {
                 Ronde {room.currentRound} / {room.totalRounds}
               </span>
             )}
+            <Link
+              href="/modul"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Buka modul pembelajaran di tab baru"
+              className="text-xs font-mono-tabular px-2.5 py-1.5 rounded bg-[#252523] hover:bg-[#383835] text-[#F4F1EA] border border-[#5A5852] min-h-[36px] flex items-center gap-1.5 transition-colors"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-[#B83214]" />
+              <span className="hidden sm:inline">Modul</span>
+            </Link>
             <button
               type="button"
               onClick={handleLeave}
