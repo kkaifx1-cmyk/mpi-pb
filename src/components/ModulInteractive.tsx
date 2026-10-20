@@ -19,8 +19,6 @@ import {
   Lightbulb,
   ArrowRight,
   Award,
-  Play,
-  RotateCcw,
 } from "lucide-react";
 
 export function ModulInteractive() {
@@ -127,23 +125,6 @@ export function ModulInteractive() {
             <p className="text-xs sm:text-sm text-[#484641] mt-1 max-w-3xl">
               Kuasai teknik dekonstruksi visual, spesifikasi prompt 5 dimensi (Subjek, Latar, Cahaya, Medium, Komposisi), dan strategi rekayasa balik gambar di meja permainan.
             </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
-            <Link
-              href="/"
-              className="min-h-[44px] px-4 py-2 rounded bg-[#141413] text-[#F4F1EA] hover:bg-[#2B2B29] font-mono-tabular text-xs flex items-center justify-center gap-2 border border-[#141413] transition-colors focus-visible:ring-2 focus-visible:ring-[#B83214] focus-visible:outline-none"
-            >
-              <RotateCcw className="w-4 h-4" />
-              <span>Meja Kendali Guru</span>
-            </Link>
-            <Link
-              href="/play"
-              className="min-h-[44px] px-4 py-2 rounded bg-[#B83214] text-white hover:bg-[#96270E] font-mono-tabular text-xs font-semibold flex items-center justify-center gap-2 border border-[#141413] transition-colors focus-visible:ring-2 focus-visible:ring-[#B83214] focus-visible:outline-none"
-            >
-              <Play className="w-4 h-4 fill-current" />
-              <span>Layar Pemain (/play)</span>
-            </Link>
           </div>
         </div>
 
