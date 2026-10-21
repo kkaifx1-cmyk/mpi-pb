@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { CountdownTimer } from "./CountdownTimer";
-import { Eye, Play, Pause, PlusCircle, ArrowRight } from "lucide-react";
+import { Play, Pause, PlusCircle, ArrowRight } from "lucide-react";
 
 interface DiscussionModalProps {
   isOpen: boolean;
@@ -94,7 +94,7 @@ export const DiscussionModal: React.FC<DiscussionModalProps> = ({
             </div>
           </div>
 
-          {/* Panduan Diskusi & Catatan Controller */}
+          {/* Panduan Diskusi */}
           <div className="w-full md:w-1/2 flex flex-col justify-between space-y-4">
             <div className="panel-frame p-5 bg-white space-y-3">
               <h3 className="font-bold text-[#141413] text-base flex items-center gap-2 border-b border-[#C8C3B8] pb-2">
@@ -115,18 +115,6 @@ export const DiscussionModal: React.FC<DiscussionModalProps> = ({
                 </li>
               </ul>
             </div>
-
-            {/* Bocoran Prompt Asli Khusus Controller */}
-            {isController && secretPrompt && (
-              <div className="panel-muted p-4 space-y-1 text-xs">
-                <span className="font-mono-tabular font-bold uppercase text-[#B83214] block">
-                  Kunci Prompt Rahasia (Hanya Tampil di Layar Controller)
-                </span>
-                <p className="font-mono-tabular text-xs text-[#141413] leading-relaxed">
-                  {secretPrompt}
-                </p>
-              </div>
-            )}
           </div>
         </div>
 
